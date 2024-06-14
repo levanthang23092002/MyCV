@@ -1,0 +1,196 @@
+/* Reset styles */
+body {
+    background-color: #eee; /* Màu nền mặc định của body */
+    color: #fff; /* Màu chữ mặc định là trắng */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Font chữ mặc định */
+}
+
+/* Phần nền xám */
+.background-gray {
+    background-color: #eee; /* Màu nền cho phần nền xám */
+    color: #fff; /* Màu chữ là trắng */
+}
+
+/* Breadcrumb horizontal */
+.breadcrumb-horizontal {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    padding: 10px 15px; /* Lề cho breadcrumb */
+    margin: 10px 20px 5px 20px;
+    background-color: #424242; /* Màu nền xám đậm */
+    border-radius: 8px; /* Bo góc */
+    margin-top: 10px; /* Khoảng cách top 10px */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    color: #fff; /* Màu chữ là trắng */
+}
+
+.breadcrumb-horizontal li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.breadcrumb-horizontal li a {
+    text-decoration: none;
+    color: #ffffff; /* Màu chữ của breadcrumb */
+}
+
+.breadcrumb-horizontal li+li:before {
+    content: "/";
+    margin-right: 10px;
+    color: #6c757d; /* Màu dấu "/" */
+}
+
+.breadcrumb-horizontal a:hover {
+    text-decoration: underline;
+}
+
+/* Card style */
+.card {
+    background-color: #424242; /* Màu nền xám đậm */
+    border: 1px solid #dee2e6;
+    border-radius: 7px;
+    margin: 5px 0;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Đổ bóng */
+    color: #fff; /* Màu chữ là trắng */
+}
+
+.card-body {
+    padding: 1.25rem; /* Lề nội dung */
+}
+
+/* List group item */
+.list-group-item {
+    background-color: #424242; /* Màu nền xám đậm */
+    border: 1px solid #dee2e6;
+    color: #fff; /* Màu chữ là trắng */
+    padding: 10px; /* Lề nội dung */
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+}
+.list-group li{
+    border: none;
+}
+.list-group a{
+    text-decoration: none;
+}
+.list-group li:hover{
+    text-decoration: none;
+    color: rgb(200, 77, 77);
+}
+.list-group-item i {
+    margin-right: 10px; /* Khoảng cách giữa icon và văn bản */
+}
+
+.list-group-item p {
+    margin: 0; /* Xóa khoảng cách lề của văn bản */
+}
+
+/* Progress bar */
+.progress {
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    background-color: #007bff;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+/* Cột 25% */
+.col-lg-4 {
+    flex: 0 0 25%; /* Chiếm 25% chiều rộng và không co giãn */
+    margin: 10px; /* Margin đều xung quanh */
+}
+
+/* Cột 70% */
+.col-lg-8 {
+    flex: 0 0 70%; /* Chiếm 70% chiều rộng và không co giãn */
+    margin: 10px; /* Margin đều xung quanh */
+}
+
+/* Các thiết lập cho các phần tử khác */
+.card-body.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.card-body.text-center img {
+    width: 150px;
+}
+
+.card-body.text-center h5 {
+    margin-top: 1rem; /* Khoảng cách tên */
+}
+
+.card-body.text-center p {
+    margin-bottom: .5rem; /* Khoảng cách văn bản dưới */
+}
+
+.d-flex.justify-content-center {
+    margin-top: 1rem; /* Khoảng cách nút */
+}
+
+.list-group {
+    padding: 0;
+    border-radius: 5px;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #424242; /* Màu nền xám đậm */
+    color: #fff; /* Màu chữ là trắng */
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+    padding: 5px; /* Lề nội dung */
+}
+
+.list-group-item i {
+    margin-right: 10px; /* Khoảng cách giữa icon và văn bản */
+}
+
+.list-group-item p {
+    margin: 0; /* Xóa khoảng cách lề của văn bản */
+}
+
+/* Container chứa các cột */
+.custom-col-spacing {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các cột */
+    gap: 5px; /* Khoảng cách giữa các cột */
+}
+.custom-col-spacing .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px; /* Giảm margin phải của dòng */
+    margin-left: -10px; /* Giảm margin trái của dòng */
+}
+
+.custom-col-spacing .col-6 {
+    flex: 0 0 50%; /* Chiếm 50% chiều rộng của màn hình */
+    max-width: 48%; /* Chiếm 50% chiều rộng tối đa */
+    padding-right: 10px; /* Tăng padding phải để tạo khoảng cách */
+    padding-left: 10px; /* Tăng padding trái để tạo khoảng cách */
+}
+/* Định dạng chiều rộng của thanh tiến độ */
+.progress-bar {
+    height: 5px; /* Độ cao của thanh tiến độ */
+}
+
+#web-design-progress {
+    width: 80%; /* Thiết lập chiều rộng cho tiến độ của Web Design là 80% */
+}
+#sort-design-progress {
+    width: 80%; /* Thiết lập chiều rộng cho tiến độ của Web Design là 80% */
+}
+
+#website-markup-progress {
+    width: 72%; /* Thiết lập chiều rộng cho tiến độ của Website Markup là 72% */
+}
+
+/* Các thiết lập cho các thanh tiến độ khác tương tự */
